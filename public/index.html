@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Marry Me? ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@100;200;300;400;500;700&family=Inter:wght@100;200;300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="heart-background"></div>
+    <canvas id="particle-mesh-canvas"></canvas>
+
+    <main id="main-container">
+        <!-- Step 1: The Question -->
+        <section id="question-section" class="active">
+            <div class="premium-frame-decoration top"></div>
+            <div class="premium-frame-decoration bottom"></div>
+
+            <div class="landing-ui-layer">
+                <div class="corner-accent tl">1.2.2025</div>
+                <div class="corner-accent tr">FOREVER</div>
+                <div class="corner-accent bl">PURE LOVE</div>
+                <div class="corner-accent br">INFINITY</div>
+            </div>
+
+            <div class="premium-wrapper">
+                <span class="pre-title">A Special Question For You</span>
+                <h1 class="main-title">Will you marry me? ❤️</h1>
+                <p class="sub-quote">"Two souls, one heart, a lifetime of adventures together."</p>
+                <div class="button-container">
+                    <button id="yes-btn" class="btn primary">YES, I DO! ❤️</button>
+                    <button id="no-btn" class="btn secondary">NO 😐</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2: Cinematic Portfolio TV Gallery -->
+        <section id="success-section">
+            <!-- Fixed Background UI -->
+            <div class="background-ui-layer">
+                <div class="corner-text top-left">I Love You</div>
+                <div class="corner-text top-right">I missyouuuu soo much</div>
+                <div class="corner-text top-center">haniiyeeeeee</div>
+                <div class="corner-text bottom-left">Meri Jaan</div>
+                <div class="corner-text bottom-right">Showmoleey</div>
+                <div class="corner-text bottom-center">a love gallery for my haniiiii</div>
+            </div>
+
+
+
+            <!-- Happiness Popup Modal -->
+            <div id="happiness-modal" class="happiness-modal">
+                <div class="modal-content">
+                    <h2 class="modal-text">You made me the happiest person alive ❤️</h2>
+                    <button id="close-popup-btn" class="btn primary">Continue to Gallery</button>
+                </div>
+            </div>
+
+            <!-- The TV Screen Container (Fixed Frame) -->
+            <div class="tv-frame">
+                <div id="gallery-scroll-area">
+                    <div id="gallery-loop-wrapper">
+                        <!-- 9 copies of the grid inserted by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Background Music Toggle (Optional) -->
+    <div class="music-controls">
+        <button id="music-toggle" title="Toggle Music">🎵</button>
+        <audio id="bg-music" loop></audio>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
